@@ -21,12 +21,52 @@
   margin: 0% auto;
 }
 
-.barra-navegacao-links {
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1d2226;
+  padding: 0 2rem;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 50;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.cabecalho-logo img {
+  height: 40px;
+  width: auto;
+  margin: 0 auto;
+}
+
+body {
+  padding-top: 60px; /* para não ficar atrás do header fixo */
+}
+
+.barra-navegação-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.6rem;
+  gap: 2.6rem;
+   width: 782px;
+  margin-top: 8px;
+  border-radius: 0%;
+  line-height: 1.25;
 }
+
+.icone-pesquisa {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('https://cdn-icons-png.flaticon.com/512/622/622669.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
 body, input, textarea, button{
   font-family: 'Roboto', sans-serif;
   color: var(--texto-principal);
